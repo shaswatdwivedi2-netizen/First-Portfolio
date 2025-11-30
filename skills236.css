@@ -1,0 +1,93 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+#mod {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000000, #1A1A1A);
+    padding: 40px 0;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+/* Title */
+#title {
+    color: #f7c014;
+    font-size: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* GRID */
+#ajuba {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #f7c014;
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease-in-out;
+    text-align: left;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 200, 20, 0.12);
+    box-shadow: 0 0 18px rgba(247, 192, 20, 0.8);
+}
+
+/* Headings inside cards */
+.card h3 {
+    color: #f7c014;
+    margin-bottom: 12px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/* Paragraph */
+.card p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Button Box Center */
+#btnBox {
+    margin-top: 50px;
+}
+
+/* Back Button */
+#backBtn {
+    padding: 12px 25px;
+    background: #f7c014;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+#backBtn:hover {
+    background: #ffdb55;
+    box-shadow: 0 0 10px #f7c014;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #ajuba {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+}
